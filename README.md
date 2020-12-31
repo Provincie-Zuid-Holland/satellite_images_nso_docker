@@ -21,6 +21,10 @@ links = georegion.retrieve_download_links()
 print(links)
 ```
 
+# TL;DR - Daily job to fetch new images
+1. Copy `.env.example` and save as `.env`.
+2. Fill in credentials in `.env`
+3. docker run --env-file .env --mount type=bind,src=${PWD}/data,dst=/data satellite-images-nso 
 
 # DockerHub
 https://hub.docker.com/r/dockerhubpzh/satellite_images_nso_docker
